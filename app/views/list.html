@@ -1,0 +1,45 @@
+
+    <!-- Breadcrumbs-->
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="index.html">Dashboard</a>
+  </li>
+  <li class="breadcrumb-item active">Lastest Feed</li>
+</ol>
+
+
+<div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Lastest Feed</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Url</th>
+                  <th>Delete</th>
+                  <th>Edit</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Name</th>
+                  <th>Url</th>
+                  <th>Delete</th>
+                  <th>Edit</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr ng-repeat = "feed in feeds | filter:search" >
+                  <td>{{ feed.name }}</td>
+                  <td>{{ feed.url }}</td>
+                  <td><a ui-sref="delete({ id:feed.id})">Delete</a></td>
+                  <td><a ui-sref="edit({ id:feed.id})">Edit</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>

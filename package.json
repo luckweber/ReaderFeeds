@@ -1,0 +1,39 @@
+{
+  "name": "ReaderFeeds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --progress --colors --hot --inline --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "angular-ui-router": "^0.4.3",
+    "angular-ui-router-css": "0.0.0",
+    "angular-ui-router-styles": "0.0.6",
+    "betsol-ng-ui-router-styles": "^0.2.2",
+    "boostrap": "^2.0.0",
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.28.7",
+    "ngcomponentrouter": "^2.1.0",
+    "style-loader": "^0.19.0",
+    "table-to-json": "^0.12.0",
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
